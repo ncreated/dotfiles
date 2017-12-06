@@ -17,22 +17,11 @@ brew bundle
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/spark-installer laravel/valet tightenco/jigsaw
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
 # Install global NPM packages
 npm install --global yarn now
 
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+# Create a Products directory
+mkdir $HOME/Products
 
 # Symlink the Mackup config file to the home directory
 ln -s ./.mackup.cfg $HOME/.mackup.cfg
