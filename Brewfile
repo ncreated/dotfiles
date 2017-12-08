@@ -18,9 +18,6 @@ brew 'findutils'
 # Install Bash 4
 brew 'bash'
 
-# Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
-
 # Install Binaries
 brew 'awscli'
 brew 'git'
@@ -39,6 +36,12 @@ cask 'google-chrome'
 cask 'java'
 cask 'slack'
 cask 'sublime-text'
+cask 'sourcetree'
+cask 'spotify'
+
+# Development tools
+brew 'carthage'
+brew 'watchman'
 
 # Quicklook
 cask 'qlcolorcode'

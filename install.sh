@@ -26,6 +26,14 @@ mkdir $HOME/Products
 # Symlink the Mackup config file to the home directory
 ln -s ./.mackup.cfg $HOME/.mackup.cfg
 
+# Install oh-my-zsh
+if [ ! -d "$ZSH" ]; then
+  sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+fi
+
+# Install gems
+sudo sh gems
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
