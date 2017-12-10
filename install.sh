@@ -24,7 +24,7 @@ npm install --global yarn now
 mkdir $HOME/Products
 
 # Symlink the Mackup config file to the home directory
-ln -s ./.mackup.cfg $HOME/.mackup.cfg
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Install oh-my-zsh
 if [ ! -d "$ZSH" ]; then
