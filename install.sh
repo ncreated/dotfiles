@@ -23,9 +23,6 @@ npm install --global yarn now
 # Create a Products directory
 mkdir $HOME/Products
 
-# Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
-
 # Install oh-my-zsh
 if [ ! -d "$ZSH" ]; then
   sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -33,6 +30,9 @@ fi
 
 # Install gems
 sudo sh gems
+
+# Symlink the Mackup config file to the home directory
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
