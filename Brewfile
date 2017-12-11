@@ -39,6 +39,7 @@ cask 'sublime-text'
 cask 'sourcetree'
 cask 'spotify'
 cask 'flux'
+cask 'skype'
 
 # Development tools
 brew 'carthage'
