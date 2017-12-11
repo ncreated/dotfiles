@@ -7,7 +7,7 @@ alias weather="curl -4 http://wttr.in"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
-alias dotfiles="cd $DOTFILES"
+alias cddotfiles="cd $DOTFILES"
 alias cdl="cd $HOME/Library"
 alias cdd="cd ~/Desktop"
 alias cdh="cd ~/"
