@@ -42,7 +42,6 @@ cask 'flux'
 cask 'skype'
 
 # Development tools
-cask 'fastlane'
 brew 'carthage'
 brew 'watchman'
 
