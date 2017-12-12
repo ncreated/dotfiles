@@ -44,6 +44,7 @@ cask 'skype'
 # Development tools
 brew 'carthage'
 brew 'watchman'
+brew 'swiftlint'
 
 # Quicklook
 cask 'qlcolorcode'
