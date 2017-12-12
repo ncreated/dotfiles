@@ -13,3 +13,6 @@ alias cdd="cd ~/Desktop"
 alias cdh="cd ~/"
 alias cdw="cd ~/Products"
 alias cdp="cd ~/Products"
+
+# Tools
+alias sublime="subl"
