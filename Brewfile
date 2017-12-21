@@ -40,11 +40,13 @@ cask 'sourcetree'
 cask 'spotify'
 cask 'flux'
 cask 'skype'
+cask 'hex-fiend'
 
 # Development tools
 brew 'carthage'
 brew 'watchman'
 brew 'swiftlint'
+brew 'cloc'
 
 # Quicklook
 cask 'qlcolorcode'

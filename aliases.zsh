@@ -13,6 +13,7 @@ alias cdd="cd ~/Desktop"
 alias cdh="cd ~/"
 alias cdw="cd ~/Products"
 alias cdp="cd ~/Products"
+alias cdderiveddata="cd ~/Library/Developer/Xcode/DerivedData"
 
 # Tools
 alias sublime="subl"
