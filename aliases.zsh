@@ -35,3 +35,17 @@ function touchruby {
 		echo '#!/usr/bin/ruby' > $1
 	fi
 }
+
+function mitmproxyenableandrun {
+	echo "Enabling WI-FI web proxy and secure web proxy"
+	networksetup -setwebproxystate wi-fi on
+	networksetup -setsecurewebproxystate wi-fi on
+	echo "Starting mitmproxy"
+	mitmproxy
+}
+
+function mitmproxydisable {
+	echo "Disabling WI-FI web proxy and secure web proxy"
+	networksetup -setwebproxystate wi-fi off
+	networksetup -setsecurewebproxystate wi-fi off
+}
