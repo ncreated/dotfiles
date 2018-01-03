@@ -47,6 +47,7 @@ brew 'carthage'
 brew 'watchman'
 brew 'swiftlint'
 brew 'cloc'
+brew 'mitmproxy'
 
 # Quicklook
 cask 'qlcolorcode'
