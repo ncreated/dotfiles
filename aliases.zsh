@@ -18,3 +18,20 @@ alias cdderiveddata="cd ~/Library/Developer/Xcode/DerivedData"
 
 # Tools
 alias sublime="subl"
+
+# Functions
+function touchbash {
+	if [ "$#" -ne 1 ]; then
+		echo "Usage: touchbash file"
+	else
+		echo '#!/bin/bash' > $1
+	fi
+}
+
+function touchruby {
+	if [ "$#" -ne 1 ]; then
+		echo "Usage: touchruby file"
+	else
+		echo '#!/usr/bin/ruby' > $1
+	fi
+}
