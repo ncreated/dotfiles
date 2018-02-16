@@ -49,3 +49,21 @@ function mitmproxydisable {
 	networksetup -setwebproxystate wi-fi off
 	networksetup -setsecurewebproxystate wi-fi off
 }
+
+function mitmproxyconfiguresimulator {
+	if [ "$#" -ne 1 ]; then
+		echo "Usage: mitmproxyconfiguresimulator <ADVTrustStore location>"
+	else
+		cd $1
+		./iosCertTrustManager.py -a ~/.mitmproxy/mitmproxy-ca-cert.pem
+		cd -
+	fi
+}
+
+function recordiOSsimulator {
+	if [ "$#" -ne 1 ]; then
+		echo "Usage: recordiOSsimulator <target path to mp4 file>"
+	else
+		xcrun simctl io booted recordVideo --type=mp4 $1
+	fi
+}
