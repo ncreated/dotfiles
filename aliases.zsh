@@ -16,6 +16,9 @@ alias cdw="cd ~/Products"
 alias cdp="cd ~/Products"
 alias cdderiveddata="cd ~/Library/Developer/Xcode/DerivedData"
 
+# Custom directories
+alias cdwvp="cd ~/Products/iOS-vente-privee"
+
 # Tools
 alias sublime="subl"
 
