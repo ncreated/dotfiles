@@ -6,6 +6,7 @@ alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-dir
 alias weather="curl -4 http://wttr.in"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias flushdns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+alias restartsshagent="killall ssh-agent; eval `ssh-agent`"
 
 # Directories
 alias cddotfiles="cd $DOTFILES"
